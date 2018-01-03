@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Internet of Things</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="signup.css" rel="stylesheet">
+
+  </head>
+ 
+  <body>
+ 
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Sign In</a></li>
+            <li role="presentation" class="active"><a href="showSignup">Sign Up</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">IOT APP</h3>
+      </div>
+ 
+      <div class="jumbotron">
+      <form action="viewDevice" method="post">
+        <h1>Light It Up App</h1>
+        <label for="inputUName" class="sr-only">Username</label>
+        <input type="name" name="inputUName" id="inputUName" class="form-control" placeholder="Username" required>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+ 
+        <input id="btnLogin" class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
+      </form>
+      </div>
+ 
+    </div>
+  </body>
+</html>
+

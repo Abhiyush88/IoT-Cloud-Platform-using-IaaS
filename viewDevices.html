@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Internet of Things</title>
+</head>
+<body>
+<h1>Your Devices</h1>
+{% for item in items %}
+    <strong>DEVICE ID:</strong> {{ item.Device_Id }} <br>
+    <strong>DEVICE TYPE:</strong> {{ item.Device_Type }} <br>
+    <strong>DATE - TIME:</strong> {{ item.Date_Time }} <br>
+    <strong>USERNAME:</strong> {{ item.userName }} <br>
+{% endfor %}
+<form action="addDevice">
+    <input type="submit" value="Manage Devices" />
+</form>
+<form action="/">
+    <input type="submit" value="Logout">
+</form>
+</body>
+</html>
